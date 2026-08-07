@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@source "./safelist.txt";
+
+@theme {
+    --font: initial;
+    --font-body: Inter, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    @apply text-black dark:text-white;
+}
+
+h1 {
+    @apply text-5xl mb-6 font-bold;
+}
+
+h2 {
+    @apply text-3xl mb-4 font-bold;
+}
+
+h3,
+h4,
+h5 {
+    @apply text-3xl mb-2 font-bold;
+}
+
+p {
+    @apply text-lg mb-1;
+}
+
+body {
+    @apply bg-slate-100 dark:bg-slate-800 text-black dark:text-white;
+}
+
+section {
+    @apply mb-12;
+}
+
+/* button {
+    @apply rounded-full dark:bg-blue-300 dark:text-black bg-blue-700 text-white py-2 px-8 hover:dark:bg-cyan-200 hover:bg-cyan-500 hover:text-black;
+} */
+
+.water {
+    @apply bg-blue-700 dark:bg-blue-300 text-white dark:text-black;
+}
+
+.wind {
+    @apply bg-cyan-500 dark:bg-cyan-200 text-white dark:text-black;
+}
+
+.nuclear {
+    @apply bg-emerald-600 text-white dark:bg-emerald-300 dark:text-black;
+}
+
+.sun {
+    @apply bg-yellow-400 dark:bg-yellow-200 text-black;
+}
+
+.solar {
+    @apply bg-yellow-400 dark:bg-yellow-200 text-black;
+}
+
+.biomass {
+    @apply bg-amber-500 dark:bg-amber-200 dark:text-black text-white;
+}
+
+.imports {
+    @apply bg-rose-500 dark:bg-rose-200 dark:text-black text-white;
+}
+
+.gas {
+    @apply bg-red-500 dark:bg-red-300 text-white dark:text-black;
+}
